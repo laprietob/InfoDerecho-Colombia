@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoDerecho Colombia - Calculadora</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">InfoDerecho Colombia</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./checklist.html">Checklist</a></li>
+        <li><a href="./directorio.html" aria-current="page">Directorio</a></li>
+        <li><a href="./calculadora.html">Calculadora</a></li>
+        <li><a href="./acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Calculadora de línea de pobreza</h1>
+      <p>Compara el ingreso de tu hogar con la línea de pobreza oficial vigente.</p>
+    </section>
+
+    <!-- Formulario de cálculo: la lógica vive en js/calculadora.js -->
+    <form id="calculadora-form" novalidate>
+      <label for="ingreso-hogar">Ingreso mensual del hogar (COP)</label>
+      <input type="number" id="ingreso-hogar" name="ingreso-hogar" min="0" required>
+
+      <label for="num-personas">Número de personas en el hogar</label>
+      <input type="number" id="num-personas" name="num-personas" min="1" required>
+
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <!-- Resultado del cálculo: se llena dinámicamente con JavaScript -->
+    <section id="calculadora-resultado" aria-live="polite"></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Este sitio es informativo y no reemplaza la asesoría legal o social especializada.</p>
+    <p>Fuentes: DANE, Prosperidad Social, DNP</p>
+  </footer>
+
+</body>
+</html>

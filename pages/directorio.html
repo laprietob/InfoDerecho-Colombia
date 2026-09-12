@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoDerecho Colombia - Directorio de programas</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">InfoDerecho Colombia</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./checklist.html">Checklist</a></li>
+        <li><a href="./directorio.html" aria-current="page">Directorio</a></li>
+        <li><a href="./calculadora.html">Calculadora</a></li>
+        <li><a href="./acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Directorio de programas sociales</h1>
+      <p>Consulta todos los programas sociales vigentes en Colombia.</p>
+      <label for="buscador-programas" class="visually-hidden">Buscar un programa</label>
+      <input type="search" id="buscador-programas" placeholder="Buscar un programa...">
+    </section>
+
+    <!-- Listado de tarjetas: se llena dinámicamente desde data/programas.json -->
+    <section id="lista-programas" class="programas-grid" aria-live="polite">
+      <!-- Cada tarjeta de programa se genera aquí con js/directorio.js -->
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Este sitio es informativo y no reemplaza la asesoría legal o social especializada.</p>
+    <p>Fuentes: DANE, Prosperidad Social, DNP</p>
+  </footer>
+
+</body>
+</html>
